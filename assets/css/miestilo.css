@@ -1,0 +1,153 @@
+body {
+background-color: #102332;
+color: black;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+p {
+    font-weight: bold;
+    text-align: center;
+    font-style: italic
+   }
+
+   section {
+    padding: 20px;}
+   
+
+
+/*
+   .Clase1 {
+    
+    background-color: #1b4663;
+                 border-radius: 10px;
+    padding: 10px;
+     font-family: Arial
+         font-weight: bold;
+         text-align: center;
+       } 
+
+*/
+       header {
+        background-color: #333333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        }
+        section {
+        padding: 20px; /* espaciado para la sección de 20 pixeles */}
+        footer {
+        background-color: #333333; /* Color de fondo del footer */
+        color: #fff;
+        padding: 20px 0; 
+    }
+        .footer-content {
+        max-width: 100px; /* Ancho máximo del contenido del footer */
+        margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
+        text-align: center; 
+    }
+
+    .pie {
+                display: inline-flex; 
+        text-align:center;
+        max-width: 300%;
+        gap: 20px;
+    }
+        nav {
+            background-color: #1b4663;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: Arial
+           }
+           nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+           }
+           nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+           }
+           nav ul li a {
+            color: #BEE9E8;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 15px;
+           }
+           nav ul li a:hover {
+            background-color: #333333;
+           }
+
+        /* Estilos para las imágenes */
+        .Clase2 {
+    
+            background-color: #1b4663;
+            margin: 20px;
+            border-radius: 10px;
+            padding: 10px;
+             font-family: Arial;
+                 font-weight: bold;
+                 text-align: center;
+               } 
+
+.logo  {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 15%; 
+    border: 3px transparent;
+    border-radius: 10px;
+    }
+
+.imagen {
+    display: block; /* Para eliminar el espacio adicional que algunos navegadores agregan a las img. */
+    margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+    border: 3px transparent; /* Contorno de 3px con un color verde (#69bd45) alrededor de la img.*/
+    border-radius: 10px; /* Borde redondeado de 10px para suavizar el contorno */
+    }
+
+    .logos {
+        display: inline-flex; 
+        text-align:center;
+        max-width: 30%;
+        gap: 20px;
+      }
+
+      h2 {
+        font-weight: bold;
+        text-align: center;
+        font-style: italic;
+        color: #94c1e686;
+      }
+      .carousel{
+        font-weight:normal;
+        text-align: center;
+        font-style:inherit;
+        color: #f6f8fae0;
+      }
+
+  .carousel-item img {
+    height: 80vh; 
+    width: 80vh;
+    object-fit: cover;
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    border: 3px transparent;
+    border-radius: 10px;
+  }
+
+article ul p:hover {
+     color: #bb347e;
+  }
+
+.menu {
+  color: #BEE9E8;
+  background-color: #333333;
+  max-width: 900px; 
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  }
