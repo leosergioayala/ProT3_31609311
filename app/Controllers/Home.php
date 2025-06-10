@@ -6,7 +6,8 @@ class Home extends BaseController
 {
     public function index()
     {
-        echo view('front/head_view');
+        $data ['titulo']= 'pagina principal';
+        echo view('front/head_view', $data);
         echo view('front/navbar_view');
         echo view('front/principal');
         echo view('front/footer_view');
@@ -14,32 +15,33 @@ class Home extends BaseController
 
 
         public function quienes_somos()
-    {
-        echo view('front/head_view');
+    {  $data ['titulo']= 'quienes somos';
+        echo view('front/head_view', $data);
         echo view('front/navbar_view');
         echo view('front/quienes_somos');
         echo view('front/footer_view');
     }
 
         public function acerca_de()
-    {
-        echo view('front/head_view');
+    {   $data ['titulo']= 'acerca de';
+        echo view('front/head_view', $data);
+
         echo view('front/navbar_view');
         echo view('front/acerca_de');
         echo view('front/footer_view');
     }
 
         public function registrarse()
-    {
-        echo view('front/head_view');
+    {   $data ['titulo']= 'registrarse';
+        echo view('front/head_view', $data);
         echo view('front/navbar_view');
         echo view('front/registrarse');
         echo view('front/footer_view');
     }
 
             public function login()
-    {
-        echo view('front/head_view');
+    {   $data ['titulo']= 'login';
+        echo view('front/head_view', $data);
         echo view('front/navbar_view');
         echo view('front/login');
         echo view('front/footer_view');
