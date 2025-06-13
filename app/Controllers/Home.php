@@ -7,10 +7,10 @@ class Home extends BaseController
     public function index()
     {
         $data ['titulo']= 'pagina principal';
-        echo view('front/head_view', $data);
-        echo view('front/navbar_view');
-        echo view('front/principal');
-        echo view('front/footer_view');
+        echo view('/front/head_view', $data);
+        echo view('/front/navbar_view');
+        echo view('/front/principal');
+        echo view('/front/footer_view');
     }
 
 
@@ -35,7 +35,7 @@ class Home extends BaseController
     {   $data ['titulo']= 'registrarse';
         echo view('front/head_view', $data);
         echo view('front/navbar_view');
-        echo view('front/registrarse');
+        echo view('back/usuario/registrarse');
         echo view('front/footer_view');
     }
 
@@ -43,7 +43,7 @@ class Home extends BaseController
     {   $data ['titulo']= 'login';
         echo view('front/head_view', $data);
         echo view('front/navbar_view');
-        echo view('front/login');
+        echo view('back/usuario/login');
         echo view('front/footer_view');
     }
 }

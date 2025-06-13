@@ -1,10 +1,18 @@
+<?php if (session()->getFlashdata ('msg')):?>
+    <div class="alert alert-warning">
+      <?= session()->getFlashdata ('msg')?>
+    </div>
+<?php endif;?>
+
+
+
 <section class="container-fluid mt-5">
   <div class="row g-4 align-items-center menu">
         <div class="col-md-6 text-center">
       <img src="./assets/img/logo.png" alt="instituto Future" class="img-fluid" style="max-height: 450px;">
     </div>
         <div class="col-md-6">
-      <form class="px-4 py-3">
+        <form method= "post" action="<?php echo base_url ('/enviarlogin')?>" class="px-4 py-3">
         <h2>Log in</h2>
                 <div class="mb-3">
           <label for="exampleDropdownFormEmail1" class="form-label">Usuario</label>
@@ -25,8 +33,9 @@
           </label>
         </div>
         <button type="submit" class="btn btn-primary">Sign in</button>
+        <a href="<?php echo base_url ('login'); ?>" class="btn btn-success">
         <div class="dropdown-divider my-3"></div>
-        ¿Nuevo?<a class="dropdown-item" href="<?php echo base_url('registrarse') ?>">Registrarse aquí</a>
+        ¿Nuevo?<a class="dropdown-item" href="<?php echo base_url('/registrarse') ?>">Registrarse aquí</a>
       </form>
     </div>
   </div>
