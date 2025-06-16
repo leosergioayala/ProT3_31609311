@@ -2,6 +2,7 @@
 namespace App\Controllers;
 Use App\Models\usuarios_model;
 Use CodeIgniter\Controller;
+
 class usuarios_controller extends Controller {
 
     public function __construct(){
@@ -11,8 +12,8 @@ class usuarios_controller extends Controller {
 
  public function create(){
 
-    {   $data ['titulo']= 'registrarse';
-        echo view('front/head_view', $data);
+    {   $dato ['titulo']= 'registrarse';
+        echo view('front/head_view', $dato);
         echo view('front/navbar_view');
         echo view('back/usuario/registrarse');
         echo view('front/footer_view');
@@ -20,7 +21,7 @@ class usuarios_controller extends Controller {
 }
 public function formValidation(){
 
-    $input = $this ->validate([
+    $input = $this->validate([
         'inputName'=> 'required|min_length[3]',
         'inputSurname' => 'required|min_length[3]|max_length[25]', 
         'inputUser'=> 'required|min_length[3]', 

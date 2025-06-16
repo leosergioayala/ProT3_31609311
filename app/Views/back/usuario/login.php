@@ -1,8 +1,13 @@
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+  <div class="card" style="width: 50%;">
+  <div class="card-header text-center">
+<h2>Iniciar Sesión</h2>
+</div>
 <?php if (session()->getFlashdata ('msg')):?>
     <div class="alert alert-warning">
       <?= session()->getFlashdata ('msg')?>
     </div>
-<?php endif;?>
+<?php endif?>
 
 
 
@@ -20,11 +25,11 @@
         </div>
         <div class="mb-3">
           <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@gmail.com">
+          <input name="inputEmail"type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@gmail.com">
         </div>
         <div class="mb-3">
           <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+          <input name="inputPassword"type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="dropdownCheck">

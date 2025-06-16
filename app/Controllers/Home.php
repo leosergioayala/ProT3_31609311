@@ -12,9 +12,9 @@ class Home extends BaseController
         echo view('/front/principal');
         echo view('/front/footer_view');
     }
-
-
-        public function quienes_somos()
+    
+    public function quienes_somos()
+    
     {  $data ['titulo']= 'quienes somos';
         echo view('front/head_view', $data);
         echo view('front/navbar_view');
@@ -22,7 +22,7 @@ class Home extends BaseController
         echo view('front/footer_view');
     }
 
-        public function acerca_de()
+    public function acerca_de()
     {   $data ['titulo']= 'acerca de';
         echo view('front/head_view', $data);
 

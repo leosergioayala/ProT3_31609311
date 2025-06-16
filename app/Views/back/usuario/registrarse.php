@@ -28,7 +28,7 @@
     <input name="inputSurname"type="text" class="form-control" id="inputSurname" placeholder="Apellido">
   <?php if ($validation->getError('inputSurname'))?>
 <div class="alert alert-danger mt-2">
-  <? $error = $validation->getError('inpuSurname')?>
+  <? $error = $validation->getError('inputSurname')?>
   </div>
   </div>
     <div class="col-12">
@@ -59,10 +59,18 @@
   <div class="col-md-6">
     <label for="inputCity" class="form-label">Ciudad</label>
     <input name="inputCity"type="text" class="form-control" id="inputCity">
+    <?php if ($validation->getError('inputCity'))?>
+<div class="alert alert-danger mt-2">
+  <? $error = $validation->getError('inputCity')?>
+  </div>
   </div>
   <div class="col-md-2">
     <label for="inputZip" class="form-label">Código Postal</label>
     <input name="inpuZip"type="text" class="form-control" id="inputZip">
+    <?php if ($validation->getError('inputZip'))?>
+<div class="alert alert-danger mt-2">
+  <? $error = $validation->getError('inputZip')?>
+  </div>
   </div>
   <div class="col-12">
   </div>
