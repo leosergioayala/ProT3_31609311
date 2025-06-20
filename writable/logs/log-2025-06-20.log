@@ -1,0 +1,10 @@
+CRITICAL - 2025-06-20 00:01:32 --> ErrorException: Undefined array key "baja"
+[Method: POST, Route: enviarlogin]
+in APPPATH\Controllers\login_controller.php on line 32.
+ 1 APPPATH\Controllers\login_controller.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "baja"', 'C:\\xampp\\htdocs\\ProT3_31609311\\app\\Controllers\\login_controller.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login_controller->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login_controller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

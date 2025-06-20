@@ -34,7 +34,7 @@ if (!$input){
    $data ['titulo']= 'registrarse';
         echo view('front/head_view', $data);
         echo view('front/navbar_view');
-        echo view('back/usuario/registrarse'), ['validation'=> $this->validator]);
+        echo view('back/usuario/registrarse', ['validation' => $this->validator]);
         echo view('front/footer_view');
 } else {
 $formModel->save ([

@@ -1,49 +1,44 @@
-<div class="container mt-5 mb-5 d-flex justify-content-center">
-  <div class="card" style="width: 50%;">
-  <div class="card-header text-center">
-<h2>Iniciar Sesión</h2>
-</div>
-<?php if (session()->getFlashdata ('msg')):?>
+     <?php if (session()->getFlashdata ('msg')):?>
     <div class="alert alert-warning">
       <?= session()->getFlashdata ('msg')?>
     </div>
-<?php endif?>
-
-
-
+<?php endif?>     
 <section class="container-fluid mt-5">
+          <form method= "post" action="<?php echo base_url ('/enviarlogin')?>" class="px-4 py-3">
   <div class="row g-4 align-items-center menu">
         <div class="col-md-6 text-center">
       <img src="./assets/img/logo.png" alt="instituto Future" class="img-fluid" style="max-height: 450px;">
-    </div>
-        <div class="col-md-6">
-        <form method= "post" action="<?php echo base_url ('/enviarlogin')?>" class="px-4 py-3">
+        </div>
+          <div class="col-md-6">
         <h2>Log in</h2>
-                <div class="mb-3">
-          <label for="exampleDropdownFormEmail1" class="form-label">Usuario</label>
-          <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="Usuario">
-        </div>
-        <div class="mb-3">
-          <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico</label>
-          <input name="inputEmail"type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@gmail.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
-          <input name="inputPassword"type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-        </div>
-        <div class="mb-3 form-check">
+            <div class="mb-3">
+          <label for="User" class="form-label">Usuario</label>
+          <input type="text" name= "inputUser" class="form-control" id="inputUser" placeholder="Usuario">
+            </div>
+              <div class="mb-3">
+          <label for="Email" class="form-label">Correo electrónico</label>
+          <input type="email" name="inputEmail"  class="form-control" id="inputEmail" placeholder="email@gmail.com">
+              </div>
+
+              <div class="mb-3">
+          <label for="Password" class="form-label">Contraseña</label>
+          <input type="password" name="inputPassword"class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+
+
+
+              <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="dropdownCheck">
           <label class="form-check-label" for="dropdownCheck">
             Recordarme
           </label>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-        <a href="<?php echo base_url ('login'); ?>" class="btn btn-success">
-        <div class="dropdown-divider my-3"></div>
-        ¿Nuevo?<a class="dropdown-item" href="<?php echo base_url('/registrarse') ?>">Registrarse aquí</a>
-      </form>
-    </div>
-  </div>
+              </div> 
+        <button type="submit" class="btn btn-primary">Sign in </button>
+        <a href="<?php echo base_url ('login'); ?>"></a>
+                  <div class="mb-3">
+          <label>¿Nuevo?</label> 
+                </div>
+  <a href="<?php echo base_url('registrarse'); ?>" class="btn btn-primary">Registrarse aquí</a>
+        
+        </form> 
 </section>
-
-            
