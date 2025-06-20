@@ -2,26 +2,22 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
+use CodeIgniter\Controller;
 
-class PanelController extends BaseController
+class panel_controller extends Controller
 {
     public function index()
     {
-        // Muestra el panel principal
-        return view('panel/index');
-    }
+    $session = session();
+    $nombre=$session->get ('inputUser');
+    $perfil=$session->get ('perfil_id');
 
-    public function perfil()
-    {
-        // Muestra la vista del perfil del usuario
-        return view('panel/perfil');
-    }
+    $data ['perfil_id']=$perfil;
 
-    public function configuracion()
-    {
-        // Muestra la vista de configuración del panel
-        return view('panel/configuracion');
+    $dato ['titulo'] = 'panel del usuario';
+    echo view ('front/head_view', $dato);
+    echo view ('front/navbar_view' );
+    echo view ('back/usuario/loggedUser', $data);
+    echo view ('front/footer_view');
     }
 }
-#a verificarrrrr

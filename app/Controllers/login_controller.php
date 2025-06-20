@@ -28,7 +28,7 @@ class login_controller extends BaseController
         $data = $model->where('inputEmail', $email)->first();
 
         if ($data) {
-            $pass = $data['inputPassword'];
+            $inputPassword = $data['inputPassword'];
             $ba = $data['Baja'];
 
             if ($ba == 'SI') {
@@ -36,15 +36,16 @@ class login_controller extends BaseController
                 return redirect()->to('/login_controller');
             }
 
-            if (password_verify($password, $pass)) {
+                $verify_inputPassword = password_verify($password, $inputPassword );
+                if($verify_inputPassword){
                 $ses_data = [
-                    'id_usuario' => $data['id_usuario'],
-                    'nombre'     => $data['inputName'],
-                    'apellido'   => $data['inputSurname'],
-                    'email'      => $data['inputEmail'],
-                    'usuario'    => $data['inputUser'],
-                    'perfil_id'  => $data['perfil_id'],
-                    'logged_in'  => true
+                    'id_usuario'    => $data['id_usuario'],
+                    'inputName'     => $data['inputName'],
+                    'inputSurname'  => $data['inputSurname'],
+                    'inputEmail'    => $data['inputEmail'],
+                    'inputUser'     => $data['inputUser'],
+                    'perfil_id'     => $data['perfil_id'],
+                    'logged_in'     => TRUE
                 ];
 
                 $session->set($ses_data);
@@ -65,7 +66,7 @@ class login_controller extends BaseController
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/');
+        return redirect()->to('principal');
     }
 }
 

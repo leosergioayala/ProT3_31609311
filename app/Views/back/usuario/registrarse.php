@@ -16,7 +16,7 @@
 
 <?php if ($validation->getError('inputName')): ?>
   <div class="alert alert-danger mt-2">
-    <?php $error = $validation->getError('inputName'); ?>
+    <?php $error = $validation->getError('inputName'); ?> Nombre inválido
   </div>
 <?php endif; ?>
  </div>
@@ -26,7 +26,7 @@
     <input name="inputSurname"type="text" class="form-control" id="inputSurname" placeholder="Apellido">
   <?php if ($validation->getError('inputSurname')): ?>
   <div class="alert alert-danger mt-2">
-    <?php $error = $validation->getError('inputSurname'); ?>
+    <?php $error = $validation->getError('inputSurname'); ?> Apellido inválido
   </div>
 <?php endif; ?>
 </div>
@@ -35,7 +35,7 @@
     <input name="inputUser"type="text" class="form-control" id="inputUser" placeholder="Usuario (Puede contener números y signos)">
   <?php if ($validation->getError('inputUser')): ?>
   <div class="alert alert-danger mt-2">
-    <?php $error = $validation->getError('inputUser'); ?>
+    <?php $error = $validation->getError('inputUser'); ?> Usuario inválido
   </div>
 <?php endif; ?>
 </div>
@@ -44,7 +44,7 @@
     <input name="inputEmail"type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
  <?php if ($validation->getError('inputEmail')): ?>
   <div class="alert alert-danger mt-2">
-    <?php $error = $validation->getError('inputEmail'); ?>
+    <?php $error = $validation->getError('inputEmail'); ?> Email inválida
   </div>
 <?php endif; ?>
 </div>
@@ -53,7 +53,7 @@
     <input name="inputPassword"type="password" class="form-control" id="inputPassword" placeholder="contraseña (mínimo 5 caracteres)">
 <?php if ($validation->getError('inputPassword')): ?>
   <div class="alert alert-danger mt-2">
-    <?php $error = $validation->getError('inputPassword'); ?>
+    <?php $error = $validation->getError('inputPassword', ); ?>contraseña inválida
   </div>
 <?php endif; ?>
  </div>
@@ -79,7 +79,7 @@
   </div>
     <div class="col-12">
     <button type="submit" class="btn btn-primary">Registrarse</button>
-    <button type="button" class="btn btn-secondary ms-2" onclick="document.querySelector('myform').reset();">Cancelar</button>
+<button type="button" class="btn btn-danger" onclick="document.querySelector('#myform').reset();">Cancelar</button>
   </div>
 </form>    
 </section>
