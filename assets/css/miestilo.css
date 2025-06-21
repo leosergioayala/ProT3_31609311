@@ -151,3 +151,7 @@ article ul p:hover {
   padding: 20px;
   border-radius: 10px;
   }
+
+.containerhorarios {
+  background-color: #333333 !important;
+}

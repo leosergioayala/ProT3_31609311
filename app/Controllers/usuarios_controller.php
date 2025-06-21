@@ -44,8 +44,8 @@ $formModel->save ([
      'inputEmail'=>$this->request->getVar('inputEmail'),
     'inputPassword'=>password_hash ($this->request->getVar('inputPassword'), PASSWORD_DEFAULT)
 ]);
-session ()->setFlashdata ('sucess', 'Usuario registrado con éxito');
-return $this->response->redirect ('/login');
+session ()->setFlashdata ('success', 'Usuario registrado con éxito');
+return redirect()->to(base_url('login'));
 }
 }
 

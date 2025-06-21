@@ -68,7 +68,7 @@
 </div>
   <div class="col-md-6">
     <label for="inputZip" class="form-label">Código Postal</label>
-    <input name="inpuZip"type="text" class="form-control" id="inputZip">
+    <input name="inputZip"type="text" class="form-control" id="inputZip">
 <?php if ($validation->getError('inputZip')): ?>
   <div class="alert alert-danger mt-2">
     <?php $error = $validation->getError('inputZip'); ?>

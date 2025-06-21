@@ -46,4 +46,21 @@ class Home extends BaseController
         echo view('back/usuario/login');
         echo view('front/footer_view');
     }
+          public function horarios()
+    {   $data ['titulo']= 'horarios';
+        echo view('front/head_view', $data);
+        echo view('front/navbar_view');
+        echo view('front/horarios');
+        echo view('front/footer_view');
+    }
+          public function aranceles()
+    {   $data ['titulo']= 'horarios';
+        echo view('front/head_view', $data);
+        echo view('front/navbar_view');
+        echo view('front/aranceles');
+        echo view('front/footer_view');
+    }
+
+
+
 }

@@ -33,7 +33,8 @@ class login_controller extends BaseController
 
             if ($ba == 'SI') {
                 $session->setFlashdata('msg', 'Usuario dado de baja');
-                return redirect()->to('/login_controller');
+                return redirect()->to(base_url('/login_controller'));
+
             }
 
                 $verify_inputPassword = password_verify($password, $inputPassword );
