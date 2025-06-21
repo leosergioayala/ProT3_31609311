@@ -54,12 +54,12 @@ class login_controller extends BaseController
                 return redirect()->to('/panel');
             } else {
                 $session->setFlashdata('msg', 'Contraseña incorrecta');
-                return redirect()->to('/login_controller');
+                return redirect()->to('/login');
             }
 
         } else {
             $session->setFlashdata('msg', 'Email incorrecto o inexistente');
-            return redirect()->to('/login_controller');
+            return redirect()->to('/login');
         }
     }
 
@@ -67,7 +67,7 @@ class login_controller extends BaseController
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('principal');
+        return redirect()->to('/');
     }
 }
 

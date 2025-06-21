@@ -13,10 +13,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <?php if (session()->perfil_id == 1):?>
-      <div class="btn btn-secondary active btnUser btn-sm">
-        <a href="">ADMIN:  <?php echo session ('inputName'); ?> </a>
-      </div>
+    <?php if(session()->perfil_id == 1):?>
+              <div class="btn btn-secondary">ADMIN:  <?php echo session ('inputName'); ?>
+            </div>
 
 
 <!-- NAVBAR PARA ADMINISTRADOR-->
@@ -30,12 +29,6 @@
         </li>
                 <li class="nav-item">
           <a aria-current="nav-link" href="<?php echo base_url ('acerca_de')?>">Acerca de</a>
-        </li>
-                <li class="nav-item">
-          <a aria-current="nav-link" href="<?php echo base_url ('registrarse')?>">Registrarse</a>
-        </li>
-                <li class="nav-item">
-          <a  aria-current="nav-link" href="<?php echo base_url ('login')?>">Login</a>
         </li>
                 <li class="nav-item">
           <a  class="btn btn-danger" href="<?php echo base_url ('/logout')?>"tabindex="-1" aria-disabled="true"> Cerrar Sesión</a>
@@ -106,10 +99,5 @@
 
 
     </div>
-
-
-
-
-
   </div>
 </nav>
