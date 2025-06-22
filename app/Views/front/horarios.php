@@ -1,5 +1,5 @@
 <section>
-  <h2 class="text-white">Nuestros Horarios</h2>
+  <h2>Nuestros Horarios</h2>
   <div class="Clase1 text-white mb-4">
     <p>
       Te dejamos nuestros horarios disponibles para trabajar en grupos. En todos los niveles se pueden coordinar horarios para clases individuales o preparación de exámenes específicos.

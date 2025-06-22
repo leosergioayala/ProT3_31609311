@@ -12,17 +12,17 @@
           <div class="card-body py-4">
             <h5 class="card-title">NUESTROS HORARIOS POR GRUPOS </h5>
             <ul class="list-group">
-              <li class="list-group-item bg-secondary text-white">KINDER</li>
+              <li class="list-group-item bg-secondary text-white"><b>Kinder</b></li>
               <li class="list-group-item text-dark">$ 40.000</li>
-              <li class="list-group-item bg-secondary text-white">Junior 1</li>
+              <li class="list-group-item bg-secondary text-white"><b>Junior 1</b></li>
               <li class="list-group-item text-dark">$ 45.000</li>
-              <li class="list-group-item bg-secondary text-white">Junior 2</li>
+              <li class="list-group-item bg-secondary text-white"><b>Junior 2</b></li>
               <li class="list-group-item text-dark">$ 45.000</li>
-              <li class="list-group-item bg-secondary text-white">Junior 3</li>
+              <li class="list-group-item bg-secondary text-white"><b>Junior 3</b></li>
               <li class="list-group-item text-dark">$ 50.000</li>
-              <li class="list-group-item bg-secondary text-white">Junior 4</li>
+              <li class="list-group-item bg-secondary text-white"><b>Junior 4</b></li>
               <li class="list-group-item text-dark">$ 50.000</li>
-              <li class="list-group-item bg-secondary text-white">Junior 5</li>
+              <li class="list-group-item bg-secondary text-white"><b>Junior 5</b></li>
               <li class="list-group-item text-dark">$ 55.000</li>
             </ul>
           </div>
@@ -30,3 +30,7 @@
       </div>
 </section>
 
+    <div class= "Clase2">
+        <p> Hacemos descuentos hasta 15% por hermanos o por grupo familiar.</p>
+        <p> Aceptamos tarjetas de débito, crédito, transferencia y efectivo.</p>
+    </div>
