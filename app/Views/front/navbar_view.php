@@ -29,6 +29,8 @@
         </li>
                 <li class="nav-item">
           <a aria-current="nav-link" href="<?php echo base_url ('acerca_de')?>">Acerca de</a>
+        </li>               <li class="nav-item">
+          <a aria-current="nav-link" href="<?php echo base_url ('usuarios')?>">Editar Usuarios</a>
         </li>
                 <li class="nav-item">
           <a  class="btn btn-danger" href="<?php echo base_url ('/logout')?>"tabindex="-1" aria-disabled="true"> Cerrar Sesión</a>

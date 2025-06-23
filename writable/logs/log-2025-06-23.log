@@ -1,0 +1,56 @@
+CRITICAL - 2025-06-23 22:56:16 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: usuarios]
+in APPPATH\Views\back\usuario\listUsers.php on line 16.
+ 1 APPPATH\Views\back\usuario\listUsers.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\ProT3_31609311\\app\\Views\\back\\usuario\\listUsers.php', 16)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ProT3_31609311\\app\\Views\\back\\usuario\\listUsers.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/usuario/listUsers', [], true)
+ 5 APPPATH\Controllers\usuarios_controller.php(60): view('back/usuario/listUsers', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\usuarios_controller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuarios_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 22:58:40 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: usuarios/edit/6]
+in APPPATH\Views\back\usuario\editUsers.php on line 2.
+ 1 APPPATH\Views\back\usuario\editUsers.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\ProT3_31609311\\app\\Views\\back\\usuario\\editUsers.php', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ProT3_31609311\\app\\Views\\back\\usuario\\editUsers.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/usuario/editUsers', [], true)
+ 5 APPPATH\Controllers\usuarios_controller.php(72): view('back/usuario/editUsers', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\usuarios_controller->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuarios_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 23:34:27 --> ErrorException: Undefined variable $validation
+[Method: GET, Route: usuarios/edit/6]
+in APPPATH\Views\back\usuario\editUsers.php on line 55.
+ 1 APPPATH\Views\back\usuario\editUsers.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\ProT3_31609311\\app\\Views\\back\\usuario\\editUsers.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ProT3_31609311\\app\\Views\\back\\usuario\\editUsers.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/usuario/editUsers', [], true)
+ 5 APPPATH\Controllers\usuarios_controller.php(72): view('back/usuario/editUsers', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\usuarios_controller->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuarios_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 23:34:30 --> ErrorException: Undefined variable $validation
+[Method: GET, Route: usuarios/edit/8]
+in APPPATH\Views\back\usuario\editUsers.php on line 55.
+ 1 APPPATH\Views\back\usuario\editUsers.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\ProT3_31609311\\app\\Views\\back\\usuario\\editUsers.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ProT3_31609311\\app\\Views\\back\\usuario\\editUsers.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('back/usuario/editUsers', [], true)
+ 5 APPPATH\Controllers\usuarios_controller.php(72): view('back/usuario/editUsers', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\usuarios_controller->edit('8')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuarios_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

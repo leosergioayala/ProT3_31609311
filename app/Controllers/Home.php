@@ -50,14 +50,14 @@ class Home extends BaseController
     {   $data ['titulo']= 'horarios';
         echo view('front/head_view', $data);
         echo view('front/navbar_view');
-        echo view('front/horarios');
+        echo view('back/usuario/horarios');
         echo view('front/footer_view');
     }
           public function aranceles()
     {   $data ['titulo']= 'horarios';
         echo view('front/head_view', $data);
         echo view('front/navbar_view');
-        echo view('front/aranceles');
+        echo view('back/usuario/aranceles');
         echo view('front/footer_view');
     }
 
